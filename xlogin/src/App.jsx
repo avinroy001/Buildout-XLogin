@@ -21,7 +21,7 @@ function App() {
     <>
     <h1>Login Page</h1>
     {msg?<p>Invalid username or password</p>:''}
-    {readOnly ? (<p>Welcome, user!</p>):(
+    {readOnly ? (<p>Welcome, {user}!</p>):(
     <form className='form' onSubmit={(e)=>check(e)}>
       <label>Username:<input type='text' onChange={(e)=>{setUser(e.target.value)}} placeholder='username' required/></label>
       <label>Password:<input type='text' onChange={(e)=>{setPass(e.target.value)}} placeholder='password' required/></label>
