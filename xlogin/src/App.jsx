@@ -17,8 +17,6 @@ function App() {
       setMsg(true);
     }
   }
-  console.log(user);
-  console.log(pass);
   return (
     <>
     <h1>Login Page</h1>
